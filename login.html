@@ -4,8 +4,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Army</title>
+
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
   </head>
   <body>
-    <h1>Hello, world! ok</h1>
+    <div class="wrapper">
+      <div class="container-fluid">
+        <div class="d-none d-lg-block fixed-top p-4" style="z-index: 1;"><a href="#"><img clas="img-fluid" width="90px" src="./assets/images/logo.png" alt="icon"/></a></div>
+        <div class="authentication-login row justify-content-center align-items-center pt-0 pb-lg-4 pe-lg-4 ps-lg-4 bg-body">
+          <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6 mx-auto text-center" style="position: relative; z-index: 1;">
+            <h2 class="mb-3 welcome-text">Welcom to Army Air Defence Center</h2>
+            <a href="#" class="mb-4 btn btnREGT">2 TRG REGT</a>
+            <form class="formCard card card-body col-xl-8 col-lg-7 col-md-9 col-11 mx-auto" action="">
+              <div class="">
+                <img clas="img-fluid" width="90px" src="./assets/images/user-rounded.svg" alt="icon"/>
+                <div class="input-group mt-3">
+                  <span class="input-group-text" id="basic-addon1"><img clas="img-fluid" width="30px" src="./assets/images/user-rounded1.svg" alt="icon"/></span>
+                  <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                </div> 
+                <!--  -->
+                <div class="input-group mt-3">
+                  <span class="input-group-text" id="basic-addon1"><img clas="img-fluid" width="30px" src="./assets/images/lock-password.svg" alt="icon"/></span>
+                  <input type="password" class="form-control" placeholder="password" aria-label="password" aria-describedby="basic-addon1">
+                </div>  
+                <!--  -->
+                <button type="button" class="mt-3 btn btnREGT w-100" style="max-width: 100%; font-weight: 500; height: 50px;">Login</button>
+                <!--  -->
+                <div class="d-sm-flex align-items-center mt-3 bottomLnks">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">Keep me sign up</label>
+                  </div>
+                  <a href="forgot.html" class="ms-auto forgotLink">Forgot password</a>
+                </div>
+                <!--  -->
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/js/theme_jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

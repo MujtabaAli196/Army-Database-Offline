@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  :root {
+    scroll-behavior: smooth;
+  }
+}
+:root {
+    --fontfamily-FiraSans: 'Fira Sans', sans-serif;
+    --bs-body-line-height:28px;
+    --bs-border-width: 1px;
+
+    --bs-heading-color: #2a3547;
+    --bs-body-color:#5a6a85;
+    --bs-heading-color:#d3ded6;
+    --bs-primary-color:#416237;
+    --bs-secondary-color:#252c24;
+    --bs-green-color:#54b238;
+    --bs-white: #fff;
+
+    --bs-link-color-rgb: 42, 53, 71;
+    --bs-link-hover-color-rgb: 93, 135, 255;
+  }
+
+body {
+    margin: 0;
+    overflow:overlay;
+    font-family: var(--fontfamily-FiraSans);
+    line-height: var(--bs-body-line-height);
+    color: var(--bs-body-color);
+    -webkit-text-size-adjust: 100%;
+}
+
+hr {
+  margin: 1rem 0;
+  color: inherit;
+  border: 0;
+  border-top: var(--bs-border-width) solid #ebf1f6;
+  opacity: 1;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--bs-heading-color);
+}
+
+h1, .h1 {
+  font-size: calc(1.34375rem + 1.125vw);
+}
+@media (min-width: 1200px) {
+  h1, .h1 {
+    font-size: 2.1875rem;
+  }
+}
+
+h2, .h2 {
+  font-size: calc(1.3rem + 0.6vw);
+}
+@media (min-width: 1200px) {
+  h2, .h2 {
+    font-size: 1.75rem;
+  }
+}
+
+h3, .h3 {
+  font-size: calc(1.278125rem + 0.3375vw);
+}
+@media (min-width: 1200px) {
+  h3, .h3 {
+    font-size: 1.53125rem;
+  }
+}
+
+h4, .h4 {
+  font-size: calc(1.25625rem + 0.075vw);
+}
+@media (min-width: 1200px) {
+  h4, .h4 {
+    font-size: 1.3125rem;
+  }
+}
+
+h5, .h5 {
+  font-size: 1.09375rem;
+}
+
+h6, .h6 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+a {
+    color: rgba(var(--bs-link-color-rgb), var(--bs-link-opacity, 1));
+    text-decoration: underline;
+}
+a:hover {
+    --bs-link-color-rgb: var(--bs-link-hover-color-rgb);
+}
+
+a:not([href]):not([class]), a:not([href]):not([class]):hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.wrapper{}
+.bg-body{
+    min-height: 100vh;
+    position: relative;
+    background: rgb(65,98,55);
+    background: radial-gradient(circle, rgba(65,98,55,1) 0%, rgba(37,44,36,1) 100%);
+}
+.bg-body::after{
+    position: absolute;
+    content: '';
+    height: 100%;
+    opacity: 0.1;
+    width: 100%;
+    background-image: url(../images/bg-logo.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+}
+
+.welcome-text{
+    color: var(--bs-heading-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+@media (max-width: 767px) {
+    .welcome-text{
+        font-size: 18px;
+    }
+}
+@media (min-width: 1400px) {
+    .welcome-text{
+        font-size: 36px;
+    }
+}
+
+.btnREGT{
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--bs-heading-color);
+    background-color: var(--bs-green-color);
+    max-width: 250px;
+    min-width: 250px;
+}
+.btnREGT:hover{
+    background-color: var(--bs-secondary-color);
+    color: var(--bs-white);
+}
+
+.formCard.card{
+    border-style: solid;
+    border-width: 3px;
+    background-color: transparent;
+    border-radius: 24px;
+    padding: 30px;
+    /* border-image: conic-gradient(black, white, white, white, black, black, black) 1; */
+}
+.formCard.card::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    z-index: -1;
+    left: 0;
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    background: rgb(97,116,88);
+    background: linear-gradient(183deg, rgba(97,116,88,0.8687850140056023) 0%, rgba(63,89,52,1) 100%);
+}
+.formCard.card .input-group{
+    border: solid 2px var(--bs-primary-color);
+    border-radius: 10px;
+}
+.formCard.card .input-group .form-control{
+    height: 50px;
+    font-style: italic;
+    color: var(--bs-primary-color);
+    border-radius: 10px;
+    border: none;
+}
+.formCard.card .input-group .form-control:focus{
+    box-shadow: none;
+}
+.formCard.card .input-group .input-group-text{
+    border-radius: 10px;
+    background-color: var(--bs-white);
+}
+
+@media(max-width:991px){
+    .formCard.card{
+        padding: 15px;
+    }
+}
+.formCard.card .bottomLnks .form-check{
+    margin: 0;
+    width: 150px;
+}
+.formCard.card .bottomLnks .form-check .form-check-label{
+    color: var(--bs-white);
+    font-size: 14px;
+    font-style: italic;
+}
+.formCard.card .bottomLnks .form-check .form-check-input{
+    background-color: transparent;
+    float: none;
+}
+.formCard.card .bottomLnks .form-check .form-check-input:checked {
+    background-color: var(--bs-secondary-color);
+    border-color: var(--bs-secondary-color);
+    box-shadow: none;
+}
+.formCard.card .bottomLnks .forgotLink{
+    font-size: 14px;
+    font-style: italic;
+    color: var(--bs-white);
+}
+
+
+
+
+.link-opacity-10 {
+    --bs-link-opacity: 0.1;
+}
+
+.link-opacity-10-hover:hover {
+    --bs-link-opacity: 0.1;
+}
+
+.link-opacity-25 {
+    --bs-link-opacity: 0.25;
+}
+
+.link-opacity-25-hover:hover {
+    --bs-link-opacity: 0.25;
+}
+
+.link-opacity-50 {
+    --bs-link-opacity: 0.5;
+}
+
+.link-opacity-50-hover:hover {
+    --bs-link-opacity: 0.5;
+}
+
+.link-opacity-75 {
+    --bs-link-opacity: 0.75;
+}
+
+.link-opacity-75-hover:hover {
+    --bs-link-opacity: 0.75;
+}
+
+.link-opacity-100 {
+    --bs-link-opacity: 1;
+}
+
+.link-opacity-100-hover:hover {
+    --bs-link-opacity: 1;
+}
