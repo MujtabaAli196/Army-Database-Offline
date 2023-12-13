@@ -34,6 +34,12 @@
 .bs-heading-bg{
   background-color: var(--bs-heading-color);
 }
+.bs-primary-text{
+  color: var(--bs-primary-color);
+}
+.bs-primary-bg{
+  background-color: var(--bs-primary-color);
+}
 
 body {
     margin: 0;
@@ -241,8 +247,90 @@ a:not([href]):not([class]), a:not([href]):not([class]):hover {
     color: var(--bs-white);
 }
 
+/* btn-courses */
+.btn-courses{
+  text-transform: uppercase;
+  color: var(--bs-white);
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  border: none;
+  font-weight: 400;
+  border-radius: 8px;
+  letter-spacing: 2px;
+}
+.btn-courses:hover{
+  color: var(--bs-white);
+}
+.btn-courses.btnBG1{
+  background: rgb(180,180,180);
+  background: linear-gradient(180deg, rgba(180,180,180,1) 50%, rgba(179,179,179,1) 50%);
+}
+.btn-courses.btnBG2{
+  background: rgb(43,43,43);
+  background: linear-gradient(180deg, rgba(43,43,43,1) 50%, rgba(8,8,8,1) 50%);
+}
+.btn-courses.btnBG3{
+  background: rgb(255,207,39);
+  background: linear-gradient(180deg, rgba(255,207,39,1) 50%, rgba(250,197,15,1) 50%);
+}
+.btn-courses.btnBG4{
+  background: rgb(171,152,94);
+  background: linear-gradient(180deg, rgba(171,152,94,1) 50%, rgba(162,142,79,1) 50%);
+}
 
+.btn-outline-info{
+  border-color: var(--bs-green-color);
+  color: var(--bs-green-color);
+}
+.btn-outline-info:hover,
+.btn-outline-info:focus,
+.btn-outline-info:active{
+  background-color: var(--bs-green-color) !important;
+  border-color: var(--bs-green-color) !important;
+  color: var(--bs-white) !important;
+}
 
+.btn-SQD{
+  height: 55px;
+  border: solid 2px var(--bs-green-color) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--bs-white);
+  font-size: 16px;
+  background-color: rgba(37,44,36,0.2);
+}
+.btn-SQD{
+  background-color: rgba(37,44,36,0.2);
+  color: var(--bs-white) !important;
+}
+
+.table-page{
+  padding: 10px !important;
+  border: solid 1px var(--bs-green-color);
+}
+.table-page .table tbody,
+.table-page .table th,
+.table-page .table thead,
+.table-page .table tr{
+  background-color: #4e9342;
+  color: var(--bs-white);
+  border-bottom: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.table-page .table thead{
+  margin-bottom: 5px;
+}
+.table-page .table td{
+  background-color: rgba(71,95,63,0.7) !important;
+  color: var(--bs-white);
+  border-bottom: 0;
+}
 
 .link-opacity-10 {
     --bs-link-opacity: 0.1;

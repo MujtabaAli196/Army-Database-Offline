@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="./assets/images/favicon.ico"/>
+    <title>Army</title>
+
+    <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container-fluid">
+        <div class="fixed-top p-4 d-none d-sm-flex align-items-center">
+            <div class="" style="z-index: 1;"><a href="#"><img clas="img-fluid" width="90px" src="./assets/images/logo.png" alt="icon"/></a></div>
+            <a href="#" class="ms-auto btn btn-outline-info" data-bs-toggle="modal" data-bs-target="#exampleModal" style="max-width: 150px; min-width: 150px;">Add User</a>
+        </div>
+        <div class="authentication-login row justify-content-center align-items-center pt-0 pb-lg-4 pe-lg-4 ps-lg-4 bg-body">
+          <div class="col-sm-10 col-md-9 col-lg-8 col-xl-6 mx-auto text-center" style="position: relative; z-index: 1;">
+            <!-- <h2 class="mb-3 welcome-text">Forgot your password?</h2> -->
+            <a href="#" class="mb-4 btn btnREGT">2 TRG REGT</a>
+            <div class="d-flex col-lg-8 mx-auto align-items-center justify-content-between mb-4" style="gap:25px;">
+                <a href="subcourses.html" class="btn btn-courses btnBG1">CNI BTY</a>
+                <a href="subcourses.html" class="btn btn-courses btnBG2">BBR BTY</a>
+            </div>
+            <!--  -->
+            <div class="d-flex col-lg-8 mx-auto align-items-center justify-content-between" style="gap:25px;">
+                <a href="subcourses.html" class="btn btn-courses btnBG3">AZB BTY</a>
+                <a href="subcourses.html" class="btn btn-courses btnBG4">TPU BTY</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--  -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title bs-primary-text fs-5" style="opacity: 1;" id="exampleModalLabel">Add User</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Email:</label>
+                            <input type="email" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="modal-footer p-0" style="border: none;">
+                            <button type="button" class="btn btn-outline-info">Add</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/theme_jquery-1.12.4.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
