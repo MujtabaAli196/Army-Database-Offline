@@ -28,6 +28,12 @@
     --bs-link-color-rgb: 42, 53, 71;
     --bs-link-hover-color-rgb: 93, 135, 255;
   }
+.bs-heading-text{
+  color: var(--bs-heading-color);
+}
+.bs-heading-bg{
+  background-color: var(--bs-heading-color);
+}
 
 body {
     margin: 0;
